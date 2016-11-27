@@ -223,6 +223,7 @@
 				TargetAttributes = {
 					C1464C901DE133CB00F1D25A = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YR6B387J7Q;
 						ProvisioningStyle = Automatic;
 					};
 					C1464CA41DE133CC00F1D25A = {
@@ -479,6 +480,7 @@
 			baseConfigurationReference = FBBB487F096EB749182E9F8D /* Pods-LibLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YR6B387J7Q;
 				INFOPLIST_FILE = LibLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glorialiu.LibLife;
@@ -492,6 +494,7 @@
 			baseConfigurationReference = 4204F0CF93D6B468AD6E81E1 /* Pods-LibLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YR6B387J7Q;
 				INFOPLIST_FILE = LibLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glorialiu.LibLife;

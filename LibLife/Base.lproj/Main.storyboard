@@ -169,6 +169,13 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Tn-UN-MmK">
+                                <frame key="frameInset" minX="122" minY="445" width="131" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -181,6 +188,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="gd4-XD-qsA"/>
                     <connections>
+                        <outlet property="currentAltitude" destination="8Tn-UN-MmK" id="FeP-H6-sf0"/>
                         <outlet property="shareSwitch" destination="W0N-Rk-b99" id="aOA-2q-GBf"/>
                     </connections>
                 </viewController>
