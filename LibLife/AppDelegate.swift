@@ -7,16 +7,32 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
    var window: UIWindow?
 
+   override init(){
+      FIRApp.configure()
+   }
 
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
       // Override point for customization after application launch.
+      
+      var friendViewController = self.window?.rootViewController
+      
+      
+      //rootViewController as! MyFriendsViewController
+      //friendViewController.friends = loadFriends()
+      
       return true
+   }
+   
+   func loadFriends() -> [Friend] {
+      var friends = [Friend(name: "Gloria", userID: 1999), Friend(name: "Mady", userID: 20001)]
+      return friends
    }
 
    func applicationWillResignActive(_ application: UIApplication) {

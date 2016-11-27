@@ -7,12 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91BF47E5635AF8B3513AF899 /* Pods_LibLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DFC5729E8AF31D5D7751CA /* Pods_LibLife.framework */; };
 		C1464C951DE133CC00F1D25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464C941DE133CC00F1D25A /* AppDelegate.swift */; };
 		C1464C971DE133CC00F1D25A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464C961DE133CC00F1D25A /* ViewController.swift */; };
 		C1464C9A1DE133CC00F1D25A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1464C981DE133CC00F1D25A /* Main.storyboard */; };
 		C1464C9C1DE133CC00F1D25A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1464C9B1DE133CC00F1D25A /* Assets.xcassets */; };
 		C1464C9F1DE133CC00F1D25A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1464C9D1DE133CC00F1D25A /* LaunchScreen.storyboard */; };
 		C1464CAA1DE133CC00F1D25A /* LibLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CA91DE133CC00F1D25A /* LibLifeTests.swift */; };
+		C1464CB51DE1370F00F1D25A /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CB41DE1370F00F1D25A /* Friend.swift */; };
+		C1464CB71DE13DF700F1D25A /* MyFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CB61DE13DF700F1D25A /* MyFriendsViewController.swift */; };
+		C1464CB91DE21DC500F1D25A /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CB81DE21DC500F1D25A /* FriendTableViewCell.swift */; };
+		C1464CBD1DE229B300F1D25A /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CBC1DE229B300F1D25A /* AddFriendViewController.swift */; };
+		C1464CBF1DE2409400F1D25A /* MyGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CBE1DE2409400F1D25A /* MyGroupsViewController.swift */; };
+		C1464CC11DE243C500F1D25A /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CC01DE243C500F1D25A /* Group.swift */; };
+		C1464CC31DE2445C00F1D25A /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CC21DE2445C00F1D25A /* GroupTableViewCell.swift */; };
+		C1464CC51DE2513600F1D25A /* GroupsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CC41DE2513600F1D25A /* GroupsDetailViewController.swift */; };
+		C1464CCB1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CCA1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift */; };
+		C1464CCF1DE264E800F1D25A /* AddGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CCE1DE264E800F1D25A /* AddGroupsViewController.swift */; };
+		C1464CD11DE27E0200F1D25A /* DisplayFriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CD01DE27E0200F1D25A /* DisplayFriendTableViewCell.swift */; };
+		C1E072131DEA4D1D005CA1DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E072121DEA4D1D005CA1DA /* GoogleService-Info.plist */; };
+		C1E072151DEA4DF6005CA1DA /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E072141DEA4DF6005CA1DA /* CheckInViewController.swift */; };
+		C1E072171DEA6810005CA1DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E072161DEA6810005CA1DA /* LoginViewController.swift */; };
+		C1E072191DEA7B2A005CA1DA /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E072181DEA7B2A005CA1DA /* MainPageViewController.swift */; };
+		C1E0721B1DEA7B74005CA1DA /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E0721A1DEA7B74005CA1DA /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4204F0CF93D6B468AD6E81E1 /* Pods-LibLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-LibLife/Pods-LibLife.release.xcconfig"; sourceTree = "<group>"; };
+		47B81D2E14901E63650BE298 /* Pods_LibLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DFC5729E8AF31D5D7751CA /* Pods_LibLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1464C911DE133CC00F1D25A /* LibLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1464C941DE133CC00F1D25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1464C961DE133CC00F1D25A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +56,23 @@
 		C1464CA51DE133CC00F1D25A /* LibLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1464CA91DE133CC00F1D25A /* LibLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibLifeTests.swift; sourceTree = "<group>"; };
 		C1464CAB1DE133CC00F1D25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1464CB41DE1370F00F1D25A /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		C1464CB61DE13DF700F1D25A /* MyFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFriendsViewController.swift; sourceTree = "<group>"; };
+		C1464CB81DE21DC500F1D25A /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		C1464CBC1DE229B300F1D25A /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddFriendViewController.swift; path = ../AddFriendViewController.swift; sourceTree = "<group>"; };
+		C1464CBE1DE2409400F1D25A /* MyGroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGroupsViewController.swift; sourceTree = "<group>"; };
+		C1464CC01DE243C500F1D25A /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		C1464CC21DE2445C00F1D25A /* GroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		C1464CC41DE2513600F1D25A /* GroupsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsDetailViewController.swift; sourceTree = "<group>"; };
+		C1464CCA1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		C1464CCE1DE264E800F1D25A /* AddGroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupsViewController.swift; sourceTree = "<group>"; };
+		C1464CD01DE27E0200F1D25A /* DisplayFriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayFriendTableViewCell.swift; sourceTree = "<group>"; };
+		C1E072121DEA4D1D005CA1DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1E072141DEA4DF6005CA1DA /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		C1E072161DEA6810005CA1DA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C1E072181DEA7B2A005CA1DA /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		C1E0721A1DEA7B74005CA1DA /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		FBBB487F096EB749182E9F8D /* Pods-LibLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LibLife/Pods-LibLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BF47E5635AF8B3513AF899 /* Pods_LibLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +94,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		229359C43648C98A16BFEB69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79DFC5729E8AF31D5D7751CA /* Pods_LibLife.framework */,
+				47B81D2E14901E63650BE298 /* Pods_LibLifeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98ACC1BAF99968FDE01AA3F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBBB487F096EB749182E9F8D /* Pods-LibLife.debug.xcconfig */,
+				4204F0CF93D6B468AD6E81E1 /* Pods-LibLife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C1464C881DE133CB00F1D25A = {
 			isa = PBXGroup;
 			children = (
+				C1E072121DEA4D1D005CA1DA /* GoogleService-Info.plist */,
 				C1464C931DE133CC00F1D25A /* LibLife */,
 				C1464CA81DE133CC00F1D25A /* LibLifeTests */,
 				C1464C921DE133CC00F1D25A /* Products */,
+				98ACC1BAF99968FDE01AA3F4 /* Pods */,
+				229359C43648C98A16BFEB69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +136,24 @@
 		C1464C931DE133CC00F1D25A /* LibLife */ = {
 			isa = PBXGroup;
 			children = (
+				C1464CBC1DE229B300F1D25A /* AddFriendViewController.swift */,
 				C1464C941DE133CC00F1D25A /* AppDelegate.swift */,
+				C1464CCE1DE264E800F1D25A /* AddGroupsViewController.swift */,
 				C1464C961DE133CC00F1D25A /* ViewController.swift */,
 				C1464C981DE133CC00F1D25A /* Main.storyboard */,
+				C1E072181DEA7B2A005CA1DA /* MainPageViewController.swift */,
+				C1E0721A1DEA7B74005CA1DA /* CreateAccountViewController.swift */,
+				C1E072161DEA6810005CA1DA /* LoginViewController.swift */,
+				C1E072141DEA4DF6005CA1DA /* CheckInViewController.swift */,
+				C1464CCA1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift */,
+				C1464CC41DE2513600F1D25A /* GroupsDetailViewController.swift */,
+				C1464CBE1DE2409400F1D25A /* MyGroupsViewController.swift */,
+				C1464CD01DE27E0200F1D25A /* DisplayFriendTableViewCell.swift */,
+				C1464CC21DE2445C00F1D25A /* GroupTableViewCell.swift */,
+				C1464CC01DE243C500F1D25A /* Group.swift */,
+				C1464CB61DE13DF700F1D25A /* MyFriendsViewController.swift */,
+				C1464CB81DE21DC500F1D25A /* FriendTableViewCell.swift */,
+				C1464CB41DE1370F00F1D25A /* Friend.swift */,
 				C1464C9B1DE133CC00F1D25A /* Assets.xcassets */,
 				C1464C9D1DE133CC00F1D25A /* LaunchScreen.storyboard */,
 				C1464CA01DE133CC00F1D25A /* Info.plist */,
@@ -103,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1464CAE1DE133CC00F1D25A /* Build configuration list for PBXNativeTarget "LibLife" */;
 			buildPhases = (
+				7E6359E1F46605FCF831A9FC /* [CP] Check Pods Manifest.lock */,
 				C1464C8D1DE133CB00F1D25A /* Sources */,
 				C1464C8E1DE133CB00F1D25A /* Frameworks */,
 				C1464C8F1DE133CB00F1D25A /* Resources */,
+				60AB8E8180EFDDB13960148A /* [CP] Embed Pods Frameworks */,
+				E6E5EB06C14EB125E5BE52CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1464C9F1DE133CC00F1D25A /* LaunchScreen.storyboard in Resources */,
+				C1E072131DEA4D1D005CA1DA /* GoogleService-Info.plist in Resources */,
 				C1464C9C1DE133CC00F1D25A /* Assets.xcassets in Resources */,
 				C1464C9A1DE133CC00F1D25A /* Main.storyboard in Resources */,
 			);
@@ -194,11 +272,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60AB8E8180EFDDB13960148A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LibLife/Pods-LibLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6359E1F46605FCF831A9FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6E5EB06C14EB125E5BE52CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LibLife/Pods-LibLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1464C8D1DE133CB00F1D25A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1464CC31DE2445C00F1D25A /* GroupTableViewCell.swift in Sources */,
+				C1464CD11DE27E0200F1D25A /* DisplayFriendTableViewCell.swift in Sources */,
+				C1464CBD1DE229B300F1D25A /* AddFriendViewController.swift in Sources */,
+				C1E072171DEA6810005CA1DA /* LoginViewController.swift in Sources */,
+				C1464CBF1DE2409400F1D25A /* MyGroupsViewController.swift in Sources */,
+				C1464CCB1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift in Sources */,
+				C1464CCF1DE264E800F1D25A /* AddGroupsViewController.swift in Sources */,
+				C1E0721B1DEA7B74005CA1DA /* CreateAccountViewController.swift in Sources */,
+				C1E072151DEA4DF6005CA1DA /* CheckInViewController.swift in Sources */,
+				C1E072191DEA7B2A005CA1DA /* MainPageViewController.swift in Sources */,
+				C1464CB71DE13DF700F1D25A /* MyFriendsViewController.swift in Sources */,
+				C1464CC11DE243C500F1D25A /* Group.swift in Sources */,
+				C1464CB51DE1370F00F1D25A /* Friend.swift in Sources */,
+				C1464CC51DE2513600F1D25A /* GroupsDetailViewController.swift in Sources */,
+				C1464CB91DE21DC500F1D25A /* FriendTableViewCell.swift in Sources */,
 				C1464C971DE133CC00F1D25A /* ViewController.swift in Sources */,
 				C1464C951DE133CC00F1D25A /* AppDelegate.swift in Sources */,
 			);
@@ -335,6 +476,7 @@
 		};
 		C1464CAF1DE133CC00F1D25A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBB487F096EB749182E9F8D /* Pods-LibLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LibLife/Info.plist;
@@ -347,6 +489,7 @@
 		};
 		C1464CB01DE133CC00F1D25A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4204F0CF93D6B468AD6E81E1 /* Pods-LibLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LibLife/Info.plist;
@@ -404,6 +547,7 @@
 				C1464CB01DE133CC00F1D25A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1464CB11DE133CC00F1D25A /* Build configuration list for PBXNativeTarget "LibLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +556,7 @@
 				C1464CB31DE133CC00F1D25A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
