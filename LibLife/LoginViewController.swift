@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
          
          if error != nil {
             print("something went wrong!")
-            self.displayError("Log in failed!", "Please try again.")
+            self.displayError("Log in failed", "Username/password was incorrect. Please try again.")
          }
          else {
             print("logged in successfully!")

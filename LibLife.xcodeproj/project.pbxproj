@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		91BF47E5635AF8B3513AF899 /* Pods_LibLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DFC5729E8AF31D5D7751CA /* Pods_LibLife.framework */; };
+		C11002F41DF673130051F07F /* ActiveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11002F31DF673130051F07F /* ActiveFriend.swift */; };
+		C11002F61DF676E70051F07F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11002F51DF676E70051F07F /* MapKit.framework */; };
+		C11002F81DF679960051F07F /* FriendLocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11002F71DF679960051F07F /* FriendLocViewController.swift */; };
 		C1464C951DE133CC00F1D25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464C941DE133CC00F1D25A /* AppDelegate.swift */; };
 		C1464C971DE133CC00F1D25A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464C961DE133CC00F1D25A /* ViewController.swift */; };
 		C1464C9A1DE133CC00F1D25A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1464C981DE133CC00F1D25A /* Main.storyboard */; };
@@ -30,6 +33,7 @@
 		C1E072171DEA6810005CA1DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E072161DEA6810005CA1DA /* LoginViewController.swift */; };
 		C1E072191DEA7B2A005CA1DA /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E072181DEA7B2A005CA1DA /* MainPageViewController.swift */; };
 		C1E0721B1DEA7B74005CA1DA /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E0721A1DEA7B74005CA1DA /* CreateAccountViewController.swift */; };
+		C1E0721D1DEBD69F005CA1DA /* FloorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E0721C1DEBD69F005CA1DA /* FloorsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,9 @@
 		4204F0CF93D6B468AD6E81E1 /* Pods-LibLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-LibLife/Pods-LibLife.release.xcconfig"; sourceTree = "<group>"; };
 		47B81D2E14901E63650BE298 /* Pods_LibLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DFC5729E8AF31D5D7751CA /* Pods_LibLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11002F31DF673130051F07F /* ActiveFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveFriend.swift; sourceTree = "<group>"; };
+		C11002F51DF676E70051F07F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C11002F71DF679960051F07F /* FriendLocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendLocViewController.swift; sourceTree = "<group>"; };
 		C1464C911DE133CC00F1D25A /* LibLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1464C941DE133CC00F1D25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1464C961DE133CC00F1D25A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +79,7 @@
 		C1E072161DEA6810005CA1DA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1E072181DEA7B2A005CA1DA /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		C1E0721A1DEA7B74005CA1DA /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		C1E0721C1DEBD69F005CA1DA /* FloorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorsViewController.swift; sourceTree = "<group>"; };
 		FBBB487F096EB749182E9F8D /* Pods-LibLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LibLife/Pods-LibLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11002F61DF676E70051F07F /* MapKit.framework in Frameworks */,
 				91BF47E5635AF8B3513AF899 /* Pods_LibLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +106,7 @@
 		229359C43648C98A16BFEB69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C11002F51DF676E70051F07F /* MapKit.framework */,
 				79DFC5729E8AF31D5D7751CA /* Pods_LibLife.framework */,
 				47B81D2E14901E63650BE298 /* Pods_LibLifeTests.framework */,
 			);
@@ -141,10 +151,12 @@
 				C1464CCE1DE264E800F1D25A /* AddGroupsViewController.swift */,
 				C1464C961DE133CC00F1D25A /* ViewController.swift */,
 				C1464C981DE133CC00F1D25A /* Main.storyboard */,
+				C1E0721C1DEBD69F005CA1DA /* FloorsViewController.swift */,
 				C1E072181DEA7B2A005CA1DA /* MainPageViewController.swift */,
 				C1E0721A1DEA7B74005CA1DA /* CreateAccountViewController.swift */,
 				C1E072161DEA6810005CA1DA /* LoginViewController.swift */,
 				C1E072141DEA4DF6005CA1DA /* CheckInViewController.swift */,
+				C11002F31DF673130051F07F /* ActiveFriend.swift */,
 				C1464CCA1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift */,
 				C1464CC41DE2513600F1D25A /* GroupsDetailViewController.swift */,
 				C1464CBE1DE2409400F1D25A /* MyGroupsViewController.swift */,
@@ -152,6 +164,7 @@
 				C1464CC21DE2445C00F1D25A /* GroupTableViewCell.swift */,
 				C1464CC01DE243C500F1D25A /* Group.swift */,
 				C1464CB61DE13DF700F1D25A /* MyFriendsViewController.swift */,
+				C11002F71DF679960051F07F /* FriendLocViewController.swift */,
 				C1464CB81DE21DC500F1D25A /* FriendTableViewCell.swift */,
 				C1464CB41DE1370F00F1D25A /* Friend.swift */,
 				C1464C9B1DE133CC00F1D25A /* Assets.xcassets */,
@@ -225,6 +238,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = YR6B387J7Q;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					C1464CA41DE133CC00F1D25A = {
 						CreatedOnToolsVersion = 8.0;
@@ -327,9 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1464CC31DE2445C00F1D25A /* GroupTableViewCell.swift in Sources */,
+				C1E0721D1DEBD69F005CA1DA /* FloorsViewController.swift in Sources */,
 				C1464CD11DE27E0200F1D25A /* DisplayFriendTableViewCell.swift in Sources */,
 				C1464CBD1DE229B300F1D25A /* AddFriendViewController.swift in Sources */,
 				C1E072171DEA6810005CA1DA /* LoginViewController.swift in Sources */,
+				C11002F81DF679960051F07F /* FriendLocViewController.swift in Sources */,
+				C11002F41DF673130051F07F /* ActiveFriend.swift in Sources */,
 				C1464CBF1DE2409400F1D25A /* MyGroupsViewController.swift in Sources */,
 				C1464CCB1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift in Sources */,
 				C1464CCF1DE264E800F1D25A /* AddGroupsViewController.swift in Sources */,

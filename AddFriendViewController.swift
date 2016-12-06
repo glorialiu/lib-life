@@ -57,8 +57,6 @@ class AddFriendViewController: UIViewController{
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if segue.identifier == "doneAddingFriendSegue" {
          
-         
-         
          let destVC = segue.destination as? MyFriendsViewController
          
          

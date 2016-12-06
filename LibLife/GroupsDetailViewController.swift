@@ -10,12 +10,16 @@ import UIKit
 
 class GroupsDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+   @IBOutlet weak var sharingSwitch: UISwitch!
    
    @IBOutlet weak var groupName: UILabel!
    
    var thisGroup: Group?
    @IBOutlet weak var tableView: UITableView!
    
+   @IBAction func sharingChanged(_ sender: AnyObject) {
+      
+   }
    
     override func viewDidLoad() {
         super.viewDidLoad()
