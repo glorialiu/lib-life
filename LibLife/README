@@ -1,0 +1,24 @@
+I changed direction multiple times- I went from wanting to use a map view to display location, to deciding the map wasn't accurate, to deciding that it was accurate. So now I am using a map view
+
+This lays out my plan:
+
+What works:
+- creating user/logging in
+- adding friend/groups
+- putting friends and groups to database
+- checking where your friends are in My Friends tab
+- updating your location
+
+
+still needs to be done:
+- convert altitude to corresponding floor
+- UI
+- how often to check location
+
+- sharing to a certain group (deciding whether I want to keep this)
+- floors tab, showing who all is on each floor (deciding whether I want to keep this)
+
+
+log in with
+username: glliu@calpoly.edu
+password: password

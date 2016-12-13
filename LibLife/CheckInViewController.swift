@@ -47,47 +47,62 @@ class CheckInViewController: UIViewController, CLLocationManagerDelegate {
       
       //self.locationManager.location?.coordinate
       
+      self.locationManager.startUpdatingLocation()
       let initialLocation = CLLocation(latitude: 35.302114, longitude: -120.664509)
+      //uncomment this when looking for
       //let initialLocation = self.locationManager.location
       
       let centralLocation = CLLocation(latitude: 35.301871, longitude: -120.663856)
       
-      self.locationManager.startUpdatingLocation()
+      
       
       centerMapOnLocation(location: centralLocation)
       
-      
+      //check if they are actually in the library!
       //northeast corner 35.302324, -120.663392
       //northwest corner 35.302114, -120.664509
       //southwest corner 35.301343, -120.664273
       //southeast corner 35.301540, -120.663147
+      if (initialLocation.coordinate.latitude >= 35.302114) &&
+         (initialLocation.coordinate.latitude <= 35.301540) &&
+         (initialLocation.coordinate.longitude >= -120.663147) &&
+         (initialLocation.coordinate.longitude <=  -120.664509) {
+         
+         //let friend = ActiveFriend(name: "Sarah", coordinate: CLLocationCoordinate2D(latitude: 35.302324, longitude: -120.663392))
+         let me = ActiveFriend(name: "me", coordinate: initialLocation.coordinate)
+         
+         //mapView.addAnnotation(friend)
+         mapView.addAnnotation(me)
+         
+         let rootRef = FIRDatabase.database().reference()
+         let user = FIRAuth.auth()?.currentUser
+         
+         rootRef.child((user?.displayName)!).child("latitude").setValue(initialLocation.coordinate.latitude)
+         rootRef.child((user?.displayName)!).child("longitude").setValue(initialLocation.coordinate.longitude)
+         
+         
+      }
+      else {
+         rootRef.child((user?.displayName)!).child("Sharing").setValue("off")
+         shareSwitch.isOn = false
+         print("NOT IN LIBRARY")
+      }
       
-      let friend = ActiveFriend(name: "Sarah", coordinate: CLLocationCoordinate2D(latitude: 35.302324, longitude: -120.663392))
-      let me = ActiveFriend(name: "me", coordinate: initialLocation.coordinate)
-      
-      mapView.addAnnotation(friend)
-      mapView.addAnnotation(me)
-      
-      let rootRef = FIRDatabase.database().reference()
-      let user = FIRAuth.auth()?.currentUser
-      
-      rootRef.child((user?.displayName)!).child("latitude").setValue(35.301871)
-      rootRef.child((user?.displayName)!).child("longitude").setValue(-120.663856)
-      
+
 
       
 
     }
    
    
-   func pinColor() -> MKPinAnnotationColor  {
-      switch title! {
-      case "me":
-         return .red
-      default:
-         return .purple
-      }
-   }
+//   func pinColor() -> MKPinAnnotationColor  {
+//      switch title! {
+//      case "me":
+//         return .red
+//      default:
+//         return .purple
+//      }
+//   }
    
    let regionRadius: CLLocationDistance = 75
    func centerMapOnLocation(location: CLLocation) {

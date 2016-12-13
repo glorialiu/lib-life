@@ -28,6 +28,7 @@
 		C1464CCB1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CCA1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift */; };
 		C1464CCF1DE264E800F1D25A /* AddGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CCE1DE264E800F1D25A /* AddGroupsViewController.swift */; };
 		C1464CD11DE27E0200F1D25A /* DisplayFriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464CD01DE27E0200F1D25A /* DisplayFriendTableViewCell.swift */; };
+		C1643EBE1DF6917D00AC8498 /* README in Resources */ = {isa = PBXBuildFile; fileRef = C1643EBD1DF6917D00AC8498 /* README */; };
 		C1E072131DEA4D1D005CA1DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E072121DEA4D1D005CA1DA /* GoogleService-Info.plist */; };
 		C1E072151DEA4DF6005CA1DA /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E072141DEA4DF6005CA1DA /* CheckInViewController.swift */; };
 		C1E072171DEA6810005CA1DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E072161DEA6810005CA1DA /* LoginViewController.swift */; };
@@ -74,6 +75,7 @@
 		C1464CCA1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFriendsTableViewCell.swift; sourceTree = "<group>"; };
 		C1464CCE1DE264E800F1D25A /* AddGroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupsViewController.swift; sourceTree = "<group>"; };
 		C1464CD01DE27E0200F1D25A /* DisplayFriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayFriendTableViewCell.swift; sourceTree = "<group>"; };
+		C1643EBD1DF6917D00AC8498 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		C1E072121DEA4D1D005CA1DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1E072141DEA4DF6005CA1DA /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 		C1E072161DEA6810005CA1DA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				C1464CC01DE243C500F1D25A /* Group.swift */,
 				C1464CB61DE13DF700F1D25A /* MyFriendsViewController.swift */,
 				C11002F71DF679960051F07F /* FriendLocViewController.swift */,
+				C1643EBD1DF6917D00AC8498 /* README */,
 				C1464CB81DE21DC500F1D25A /* FriendTableViewCell.swift */,
 				C1464CB41DE1370F00F1D25A /* Friend.swift */,
 				C1464C9B1DE133CC00F1D25A /* Assets.xcassets */,
@@ -239,6 +242,9 @@
 						DevelopmentTeam = YR6B387J7Q;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 0;
 							};
@@ -275,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1643EBE1DF6917D00AC8498 /* README in Resources */,
 				C1464C9F1DE133CC00F1D25A /* LaunchScreen.storyboard in Resources */,
 				C1E072131DEA4D1D005CA1DA /* GoogleService-Info.plist in Resources */,
 				C1464C9C1DE133CC00F1D25A /* Assets.xcassets in Resources */,
