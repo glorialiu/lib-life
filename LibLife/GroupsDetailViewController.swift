@@ -56,8 +56,7 @@ class GroupsDetailViewController: UIViewController, UITableViewDelegate, UITable
    }
    
    
-    /*
-    
+   
     
     // MARK: - Navigation
 
@@ -65,7 +64,12 @@ class GroupsDetailViewController: UIViewController, UITableViewDelegate, UITable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+      if (segue.identifier == "groupToFriend") {
+         let destVC = segue.destination as! FriendLocViewController
+         
+         destVC.curFriend = thisGroup?.members[(tableView.indexPathForSelectedRow?.row)!]
+      }
     }
-    */
+
 
 }

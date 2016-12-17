@@ -11,6 +11,7 @@
 		C11002F41DF673130051F07F /* ActiveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11002F31DF673130051F07F /* ActiveFriend.swift */; };
 		C11002F61DF676E70051F07F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11002F51DF676E70051F07F /* MapKit.framework */; };
 		C11002F81DF679960051F07F /* FriendLocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11002F71DF679960051F07F /* FriendLocViewController.swift */; };
+		C14502F31E04A66F003FF0AE /* FloorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14502F21E04A66F003FF0AE /* FloorTableViewCell.swift */; };
 		C1464C951DE133CC00F1D25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464C941DE133CC00F1D25A /* AppDelegate.swift */; };
 		C1464C971DE133CC00F1D25A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1464C961DE133CC00F1D25A /* ViewController.swift */; };
 		C1464C9A1DE133CC00F1D25A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1464C981DE133CC00F1D25A /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		C11002F31DF673130051F07F /* ActiveFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveFriend.swift; sourceTree = "<group>"; };
 		C11002F51DF676E70051F07F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C11002F71DF679960051F07F /* FriendLocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendLocViewController.swift; sourceTree = "<group>"; };
+		C14502F21E04A66F003FF0AE /* FloorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorTableViewCell.swift; sourceTree = "<group>"; };
 		C1464C911DE133CC00F1D25A /* LibLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1464C941DE133CC00F1D25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1464C961DE133CC00F1D25A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,7 +155,6 @@
 				C1464CCE1DE264E800F1D25A /* AddGroupsViewController.swift */,
 				C1464C961DE133CC00F1D25A /* ViewController.swift */,
 				C1464C981DE133CC00F1D25A /* Main.storyboard */,
-				C1E0721C1DEBD69F005CA1DA /* FloorsViewController.swift */,
 				C1E072181DEA7B2A005CA1DA /* MainPageViewController.swift */,
 				C1E0721A1DEA7B74005CA1DA /* CreateAccountViewController.swift */,
 				C1E072161DEA6810005CA1DA /* LoginViewController.swift */,
@@ -161,12 +162,14 @@
 				C11002F31DF673130051F07F /* ActiveFriend.swift */,
 				C1464CCA1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift */,
 				C1464CC41DE2513600F1D25A /* GroupsDetailViewController.swift */,
-				C1464CBE1DE2409400F1D25A /* MyGroupsViewController.swift */,
 				C1464CD01DE27E0200F1D25A /* DisplayFriendTableViewCell.swift */,
 				C1464CC21DE2445C00F1D25A /* GroupTableViewCell.swift */,
 				C1464CC01DE243C500F1D25A /* Group.swift */,
 				C1464CB61DE13DF700F1D25A /* MyFriendsViewController.swift */,
 				C11002F71DF679960051F07F /* FriendLocViewController.swift */,
+				C1464CBE1DE2409400F1D25A /* MyGroupsViewController.swift */,
+				C1E0721C1DEBD69F005CA1DA /* FloorsViewController.swift */,
+				C14502F21E04A66F003FF0AE /* FloorTableViewCell.swift */,
 				C1643EBD1DF6917D00AC8498 /* README */,
 				C1464CB81DE21DC500F1D25A /* FriendTableViewCell.swift */,
 				C1464CB41DE1370F00F1D25A /* Friend.swift */,
@@ -362,6 +365,7 @@
 				C1464CCB1DE25F6700F1D25A /* ChooseFriendsTableViewCell.swift in Sources */,
 				C1464CCF1DE264E800F1D25A /* AddGroupsViewController.swift in Sources */,
 				C1E0721B1DEA7B74005CA1DA /* CreateAccountViewController.swift in Sources */,
+				C14502F31E04A66F003FF0AE /* FloorTableViewCell.swift in Sources */,
 				C1E072151DEA4DF6005CA1DA /* CheckInViewController.swift in Sources */,
 				C1E072191DEA7B2A005CA1DA /* MainPageViewController.swift in Sources */,
 				C1464CB71DE13DF700F1D25A /* MyFriendsViewController.swift in Sources */,

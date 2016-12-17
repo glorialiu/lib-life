@@ -22,6 +22,7 @@ class FriendLocViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+      floor.text = " "
 
       let thisFriendsName = curFriend?.name
       friendName.text = curFriend?.name
@@ -67,7 +68,7 @@ class FriendLocViewController: UIViewController {
     }
    
    func notSharing() {
-      floor.text = "Not sharing"
+      floor.text = ""
    }
    
    func loadFriendInfo() {
@@ -92,7 +93,8 @@ class FriendLocViewController: UIViewController {
          
          let altitude = snapshot.value!
          print(altitude)
-         self.floor.text = self.altToFloor(altitude: (altitude as! NSString).doubleValue)
+         self.floor.text = altitude as! String
+            //self.altToFloor(altitude: (altitude as! NSString).doubleValue)
          
          
          

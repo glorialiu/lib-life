@@ -154,7 +154,9 @@ class CreateAccountViewController: UIViewController {
       
       let userStatus : [String:String] = ["displayName": displayName,
                                     "email": email,
-                                    "Sharing": "off"]
+                                    "Sharing": "off",
+                                    "latitude": "0.00",
+                                    "longitude": "0.00"]
       let databaseRef = FIRDatabase.database().reference()
       
       //databaseRef.child("Posts").childByAutoId().setValue(post)

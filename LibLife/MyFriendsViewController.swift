@@ -61,7 +61,7 @@ class MyFriendsViewController: UIViewController, UITableViewDataSource, UITableV
       
       if let email = getUserEmail() {
          let alertController = UIAlertController(title: "Welcome!", message:
-            "You are logged in with \(email) and display name \(getUserDisplayName()!)", preferredStyle: UIAlertControllerStyle.alert)
+            "You are logged in with \(email) and username \(getUserDisplayName()!)", preferredStyle: UIAlertControllerStyle.alert)
          alertController.addAction(UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.default,handler: nil))
          
          self.present(alertController, animated: true, completion: nil)

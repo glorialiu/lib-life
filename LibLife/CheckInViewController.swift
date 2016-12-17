@@ -18,6 +18,7 @@ class CheckInViewController: UIViewController, CLLocationManagerDelegate {
    @IBOutlet weak var currentAltitude: UILabel!
    @IBOutlet weak var shareSwitch: UISwitch!
    
+   @IBOutlet weak var updateLocationButton: UIButton!
    @IBOutlet weak var mapView: MKMapView!
    let rootRef = FIRDatabase.database().reference()
    let user = FIRAuth.auth()?.currentUser
@@ -26,13 +27,37 @@ class CheckInViewController: UIViewController, CLLocationManagerDelegate {
 
       
       if shareSwitch.isOn {
-         rootRef.child((user?.displayName)!).child("Sharing").setValue("on")
+         
+         if (currentAltitude.text != " ") {
+            rootRef.child((user?.displayName)!).child("Sharing").setValue("on")
+            
+            let pink = UIColor(red: 255.0/255.0, green: 140.0/255.0, blue: 150.0/255.0, alpha: 1)
+            
+            updateLocationButton.backgroundColor = pink
+         }
+         else {
+            shareSwitch.isOn = false
+         }
+         
+
+         
+         
       }
       else {
          rootRef.child((user?.displayName)!).child("Sharing").setValue("off")
+         updateLocationButton.backgroundColor = UIColor(red: 255.0/255.0, green: 140.0/255.0, blue: 150.0/255.0, alpha: 0.5)
       }
 
    }
+   
+   @IBAction func updateLocation(_ sender: AnyObject) {
+      
+      
+      
+      
+      
+   }
+
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,10 +73,10 @@ class CheckInViewController: UIViewController, CLLocationManagerDelegate {
       //self.locationManager.location?.coordinate
       
       self.locationManager.startUpdatingLocation()
-      let initialLocation = CLLocation(latitude: 35.302114, longitude: -120.664509)
+      //let initialLocation = CLLocation(latitude: 35.302114, longitude: -120.664509)
       //uncomment this when looking for
-      //let initialLocation = self.locationManager.location
-      
+      let initialLocation = self.locationManager.location!
+
       let centralLocation = CLLocation(latitude: 35.301871, longitude: -120.663856)
       
       
@@ -63,10 +88,10 @@ class CheckInViewController: UIViewController, CLLocationManagerDelegate {
       //northwest corner 35.302114, -120.664509
       //southwest corner 35.301343, -120.664273
       //southeast corner 35.301540, -120.663147
-      if (initialLocation.coordinate.latitude >= 35.302114) &&
-         (initialLocation.coordinate.latitude <= 35.301540) &&
-         (initialLocation.coordinate.longitude >= -120.663147) &&
-         (initialLocation.coordinate.longitude <=  -120.664509) {
+      if (initialLocation.coordinate.latitude <= 35.302114) &&
+         (initialLocation.coordinate.latitude >= 35.301540) &&
+         (initialLocation.coordinate.longitude <= -120.663147) &&
+         (initialLocation.coordinate.longitude >=  -120.664509) {
          
          //let friend = ActiveFriend(name: "Sarah", coordinate: CLLocationCoordinate2D(latitude: 35.302324, longitude: -120.663392))
          let me = ActiveFriend(name: "me", coordinate: initialLocation.coordinate)
@@ -80,12 +105,13 @@ class CheckInViewController: UIViewController, CLLocationManagerDelegate {
          rootRef.child((user?.displayName)!).child("latitude").setValue(initialLocation.coordinate.latitude)
          rootRef.child((user?.displayName)!).child("longitude").setValue(initialLocation.coordinate.longitude)
          
-         
+         print("values set!!!")
       }
       else {
          rootRef.child((user?.displayName)!).child("Sharing").setValue("off")
          shareSwitch.isOn = false
          print("NOT IN LIBRARY")
+         currentAltitude.text = ""
       }
       
 
@@ -122,13 +148,38 @@ class CheckInViewController: UIViewController, CLLocationManagerDelegate {
    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
       
       
-      print("found altitude:", locations.last?.altitude)
-      currentAltitude.text = String(format:"%f", abs((locations.last?.altitude.distance(to: 0))!))
+      //print("found altitude:", locations.last?.altitude)
+      //currentAltitude.text = String(format:"%f", abs((locations.last?.altitude.distance(to: 0))!))
+      
+      currentAltitude.text = altToFloor(altitude: abs((locations.last?.altitude.distance(to: 0))!))
       
       rootRef.child((user?.displayName)!).child("altitude").setValue(currentAltitude.text)
       manager.stopUpdatingLocation()
       
       
+   }
+   
+   func altToFloor(altitude: Double) -> String {
+      
+      if altitude == 0 {
+         return " "
+      }
+      else if altitude < 98 {
+         return "1"
+      }
+      else if (altitude < 101) {
+         return "2"
+      }
+      else if (altitude < 105) {
+         return "3"
+      }
+      else if (altitude < 109) {
+         return "4"
+      }
+      else {
+         return "5"
+      }
+
    }
    
    
